@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business_card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="theme-switcher">
+                <button id="theme-toggle">
+                  <span data-lang-key="theme-toggle-dark">Темная тема</span>
+                </button>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">
+                    <img src="img/ru.svg" alt="RU" class="flag">RU
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <img src="img/en.svg" alt="EN" class="flag">EN
+                </button>
+                <button class="lang-btn" data-lang="sr">
+                    <img src="img/sr.svg" alt="SR" class="flag">SR
+                </button>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+              <div class="card">
+                <img src="img/your-photo.jpg" alt="Ваше фото" class="profile-pic">
+                <div>
+                  <h1 data-lang-key="intro-title">Привет, я Слава!</h1>
+                  <p data-lang-key="intro-text">Здесь вы найдете информацию обо мне, моих проектах и увлечениях.</p>
+                </div>
+              </div>
+            </section>
+            <section class="about">
+                <h2 data-lang-key="about-title">Обо мне</h2>
+                <p data-lang-key="about-text">Привет! Ну как вы уже поняли я Вячеслав, мне 16 лет и это что-то типо моей визитки. Я увлекаюсь программированием, музыкой, фотографией. Веду блог в Telegram, где делюсь своими мыслями и фотками, также проектами. Мы с другом пытаемся стать музыкальной группой, и мы активно развиваемся. </p>
+            </section>
+            <section class="projects">
+                <h2 data-lang-key="projects-title">Мои проекты</h2>
+                <div class="project-list">
+                    <div class="project-block wide">
+                        <h3 data-lang-key="project-blog-title">Мой блог</h3>
+                        <div class="project-links">
+                            <div class="project-link-container">
+                              <img src="img/telegram-icon.svg" alt="Telegram" class="project-icon">
+                              <span data-lang-key="project-tg-blog-text" class="project-text-button" data-href="https://t.me/PchelLive">Мой Telegram канал</span>
+                            </div>
+                            <div class="project-link-container">
+                              <img src="img/instagram-icon.svg" alt="Instagram" class="project-icon">
+                              <span data-lang-key="project-instagram-text" class="project-text-button" data-href="">Мой Instagram</span>
+                            </div>
+                            <div class="project-link-container">
+                              <img src="img/telegram-icon.svg" alt="Telegram" class="project-icon">
+                              <span data-lang-key="project-tg-chat-text" class="project-text-button" data-href="https://t.me/+QiPI7NoH6yQ5MDAy">Чат подписчиков</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-block wide">
+                        <h3 data-lang-key="project-band-title">Музыкальная группа <span style="color: #d9d9d9; font-size: 24px;">"OLC"</span></h3>
+                        <div class="project-links">
+                          <div class="project-link-container">
+                            <img src="img/youtube-icon.svg" alt="YouTube" class="project-icon">
+                            <span data-lang-key="project-band-youtube-text" class="project-text-button" data-href="https://www.youtube.com/@olc_Band">YouTube канал</span>
+                          </div>
+                          <div class="project-link-container">
+                            <img src="img/telegram-icon.svg" alt="Telegram" class="project-icon">
+                            <span data-lang-key="project-band-tg-text" class="project-text-button" data-href="https://t.me/olcmusic">Telegram канал группы</span>
+                          </div>
+                          <div class="project-link-container">
+                            <img src="img/telegram-icon.svg" alt="Telegram" class="project-icon">
+                            <span data-lang-key="project-band-chat-text" class="project-text-button" data-href="https://t.me/+NdaOeGeFaBs5ZmIy">Чат подписчиков канала группы</span>
+                          </div>
+                            <div class="project-link-container disabled">
+                                <img src="img/spotify-icon.svg" alt="Spotify" class="project-icon">
+                                <span data-lang-key="project-band-streaming-text" >Стриминговые сервисы</span>
+                                <span class="asterisk">*</span>
+                            </div>
+                        </div>
+                        <p class="footnote"><span class="asterisk">*</span> <span data-lang-key="project-band-streaming-info">Ведется работа над договором с дистрибьютером</span></p>
+                    </div>
+
+                    <div class="project-block wide">
+                        <h3 data-lang-key="project-streams-title">Стримы</h3>
+                        <div class="project-links">
+                          <div class="project-link-container">
+                            <img src="img/twitch-icon.svg" alt="Twitch" class="project-icon">
+                            <span data-lang-key="project-twitch-text" class="project-text-button" data-href="https://www.twitch.tv/pchelkatv_">Мой Twitch</span>
+                          </div>
+                          <div class="project-link-container">
+                            <img src="img/youtube-icon.svg" alt="YouTube" class="project-icon">
+                            <span data-lang-key="project-youtube-text" class="project-text-button" data-href="https://www.youtube.com/@pchelka_tv1509">Мой YouTube канал</span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="project-block wide">
+                        <h3 data-lang-key="project-other-title">Другие проекты</h3>
+                        <div class="project-links">
+                          <div class="project-link-container">
+                            <img src="img/dnd-icon.svg" alt="D&D" class="project-icon">
+                            <span data-lang-key="project-dnd-utils-text" class="project-text-button" data-href="https://pchelkatv.github.io/deadlands/">Утилита для помощи с играми D&D</span>
+                          </div>
+                            <div class="project-link-container disabled">
+                                <img src="img/game-icon.svg" alt="Game" class="project-icon">
+                                <span data-lang-key="project-game-text">Моя игра NoTexturePlatformer</span>
+                                <span class="asterisk">*</span>
+                            </div>
+                        </div>
+                        <p class="footnote"><span class="asterisk">*</span> <span data-lang-key="project-game-info">В разработке</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+              <h2 data-lang-key="contact-title">Связаться со мной</h2>
+              <div class="project-list">
+                <div class="project-link-container">
+                  <img src="img/telegram-icon.svg" alt="Telegram" class="project-icon">
+                  <span data-lang-key="contact-tg-offer-text" class="project-text-button" data-href="https://t.me/Pchleka_bot">Предложка ТГК канала</span>
+                </div>
+                <div class="project-link-container">
+                  <img src="img/email-icon.svg" alt="Email" class="project-icon">
+                  <span data-lang-key="contact-email-text" class="project-text-button" data-href="">Электронная почта</span>
+                </div>
+              </div>
+            </section>
+            <section class="releases">
+                <h2 data-lang-key="releases-title">Последние релизы нашей группы</h2>
+                <div class="releases-list" id="releases-list">
+                    <div class="release-item" id="release1">
+                        <img src="img/my_plastic_existence.jpg" alt="Обложка трека" class="release-cover">
+                        <div class="release-info">
+                            <span data-lang-key="release-track-name" class="release-track-name" data-href="http://www.youtube.com/watch?v=PCRK__O_WEU">my plastic existence</span>
+                        </div>
+                    </div>
+                    <div class="release-item" id="release2">
+                        <div class="release-info">
+                            <span data-lang-key="release-next-text" class="release-next-text">Релиз на подходе</span>
+                        </div>
+                    </div>
+                </div>
+              </section>
+        </main>
+        <footer>
+            <p data-lang-key="footer-text">&copy; 2023 Slava. Все права защищены.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
